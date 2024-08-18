@@ -3,7 +3,7 @@ import Interview from "./Pages/Interview";
 import Home from "./Pages/Home";
 import BgAnim from "./Components/BgAnim";
 import Services from "./Pages/Services";
-import { Toaster } from "@/components/ui/toaster";
+import  Toaster  from "./Components/ui/toaster";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { ExtractedText, FileUpload } from "./Pages/Resume";

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { startInterview, handleAnswer } from "../api/interviewService";
 import { roles } from "../data";
-import { useToast } from "@/Components/ui/use-toast";
-import { Button } from "@/components/ui/button";
+import { useToast } from "../Components/ui/use-toast";
+import { Button } from "../Components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -12,9 +12,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import  Combobox  from "@/components/Dropdown";
+import { Input } from "../Components/ui/input";
+import  Combobox  from "../Components/Dropdown";
 import { interviewTypes } from "../data";
 
 const Interview = () => {
