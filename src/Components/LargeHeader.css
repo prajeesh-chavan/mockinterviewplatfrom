@@ -1,0 +1,39 @@
+/* LargeHeader.css */
+
+/* General Styles */
+.large-header {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Make sure the header covers the entire page */
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  z-index: -50;
+}
+
+/* Text Styling */
+h1, p {
+  color: white;
+}
+
+/* Title Styling */
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+  font-weight: 600; /* Semi-bold by default */
+  color: white;
+  text-align: center;
+  margin-top: 20vh; /* Adjust margin as needed */
+}
+
+.main-title .thin {
+  font-weight: 200; /* Lighter weight for thin text */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em; /* Smaller font size on smaller screens */
+  }
+}
