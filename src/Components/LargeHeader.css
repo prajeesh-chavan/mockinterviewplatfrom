@@ -35,5 +35,6 @@ h1, p {
 @media only screen and (max-width: 768px) {
   .demo-1 .main-title {
     font-size: 3em; /* Smaller font size on smaller screens */
+    margin-top: 10vh; /* Adjust margin as needed for smaller screens */
   }
 }

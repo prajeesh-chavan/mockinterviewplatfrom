@@ -3,27 +3,26 @@ import Interview from "./Pages/Interview";
 import Home from "./Pages/Home";
 import BgAnim from "./Components/BgAnim";
 import Services from "./Pages/Services";
-import  Toaster  from "./Components/ui/toaster";
+import Toaster from "./Components/ui/toaster";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { ExtractedText, FileUpload } from "./Pages/Resume";
-
+import SpeechToText from "./Components/SpeechtoText";
 
 const App = () => {
   return (
     <>
-        <Navbar />
-      <BgAnim />
       <Toaster />
-      <div className="flex flex-col h-full w-full justify-center items-center pt-5">
+      <BgAnim />
+      <div className="flex flex-col min-h-screen w-full justify-center items-center pt-5">
+      <Navbar />
         <Home />
-
         <Services />
-         <Interview />
-        
-        
+        <Interview />
+        <SpeechToText />
       </div>
-        {/* <Footer /> */}
+      
+      {/* <Footer /> */}
     </>
   );
 };
