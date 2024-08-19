@@ -23,7 +23,7 @@ function DiamondBox() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row justify-evenly gap-24 lg:gap-64 pt-24">
+      <div className="flex flex-col lg:flex-row justify-evenly gap-24 lg:gap-48 pt-24">
         <div className="flex items-center justify-center text-center">
           <div className="grid grid-cols-2 grid-rows-2 items-center rotate-45 lg:size-[450px] md:h-[300px] md:w-[300px] h-[250px] w-[250px]">
             {["green", "red", "blue", "yellow"].map((color, index) => (
