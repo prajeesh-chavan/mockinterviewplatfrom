@@ -25,11 +25,11 @@ function DiamondBox() {
     <>
       <div className="flex flex-col lg:flex-row justify-evenly gap-24 lg:gap-64 pt-24">
         <div className="flex items-center justify-center text-center">
-          <div className="grid grid-cols-2 grid-rows-2 items-center rotate-45 lg:h-[600px] lg:w-[600px] md:h-[300px] md:w-[300px] h-[250px] w-[250px]">
+          <div className="grid grid-cols-2 grid-rows-2 items-center rotate-45 lg:h-[500px] lg:w-[500px] md:h-[300px] md:w-[300px] h-[250px] w-[250px]">
             {["green", "red", "blue", "yellow"].map((color, index) => (
               <div
                 key={index}
-                className={`lg:size-64 md:size-32 size-28 flex items-center justify-center border-2 box-border transition-transform duration-300 ${
+                className={`lg:size-56 md:size-32 size-28 flex items-center justify-center border-2 box-border transition-transform duration-300 ${
                   activeBox === index
                     ? `${translateValues[index].x} ${translateValues[index].y} bg-blue-500 text-white border-blue-400`
                     : `hover:${translateValues[index].x} hover:${translateValues[index].y} bg-white text-black`
