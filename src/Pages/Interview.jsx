@@ -13,7 +13,7 @@ import {
   DialogTrigger,
 } from "../Components/ui/dialog";
 import { Input } from "../Components/ui/input";
-import  Combobox  from "../Components/Dropdown";
+import Combobox from "../Components/Dropdown";
 import { interviewTypes } from "../data";
 
 const Interview = () => {
@@ -48,7 +48,11 @@ const Interview = () => {
     setLoading(true);
     setSpeechActive(true);
     try {
-      const initialQuestion = await startInterview(selectedRole, name, interviewType);
+      const initialQuestion = await startInterview(
+        selectedRole,
+        name,
+        interviewType
+      );
       setQuestion(initialQuestion);
       setInterviewStarted(true);
     } catch (error) {
@@ -112,19 +116,20 @@ const Interview = () => {
                 Set Preference
               </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[500px] text-black">
+            <DialogContent className="text-black overflow-auto max-w-[95vw] sm:max-w-[500px]">
               <DialogHeader>
                 <DialogTitle>Set Preferences</DialogTitle>
                 <DialogDescription>
                   Give your information to get the best interview experience.
                 </DialogDescription>
               </DialogHeader>
+
               <div className="flex flex-col items-center gap-4 py-4 px-6 text-black">
                 <div className="flex gap-4 w-full items-center">
                   <Input
                     id="name"
                     placeholder="Enter your name"
-                    className="col-span-3"
+                    className="w-full"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -134,23 +139,28 @@ const Interview = () => {
                   items={roles}
                   value={selectedRole}
                   onValueChange={setSelectedRole}
+                  placeholder="Select Role"
+                  className="w-full"
                 />
+
                 <Combobox
                   items={interviewTypes}
                   value={interviewType}
                   onValueChange={setInterviewType}
+                  placeholder="Select Interview Type"
+                  className="w-full"
                 />
               </div>
-
               <DialogFooter>
                 <Button
                   type="submit"
                   onClick={savePreferences}
-                  className="text-blue-500 bg-white hover:text-white border border-blue-500 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-4 py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+                  className="text-blue-500 bg-white hover:text-white border border-blue-500 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg sm:text-xl px-4 py-2.5 text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800"
                 >
                   Save Preferences
                 </Button>
               </DialogFooter>
+
             </DialogContent>
           </Dialog>
           <button

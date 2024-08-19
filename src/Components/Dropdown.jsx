@@ -29,15 +29,18 @@ function Combobox({ items, value, onValueChange }) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[400px] h-[60px] justify-between text-xl text-black"
+          className="w-full h-[60px] justify-between text-md sm:text-xl text-black"
         >
           {value || "Select..."}
           <ChevronsUpDown className="ml-2 h-8 w-8 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[400px] p-4">
+      <PopoverContent className="w-full p-4">
         <Command>
-          <CommandInput placeholder="Search..." className="h-[50px] text-xl" />
+          <CommandInput
+            placeholder="Search..."
+            className="h-[50px] text-md sm:text-xl"
+          />
           <CommandList>
             <CommandEmpty>No items found.</CommandEmpty>
             <CommandGroup>
@@ -46,7 +49,7 @@ function Combobox({ items, value, onValueChange }) {
                   key={item.value}
                   value={item.value}
                   onSelect={() => handleSelect(item.value)}
-                  className="text-xl"
+                  className="text-md sm:text-xl"
                 >
                   <Check
                     className={cn(
