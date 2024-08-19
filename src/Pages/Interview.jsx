@@ -103,14 +103,14 @@ const Interview = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center gap-6 justify-center">
+    <div className="h-screen flex flex-col items-center gap-6 justify-center" id="interview">
       {!interviewStarted && (
         <>
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
               <Button
                 variant="outline"
-                className="text-black w-40 h-12 mt-24"
+                className="text-black text-2xl w-48 h-18 mt-24"
                 onClick={() => setIsDialogOpen(true)}
               >
                 Set Preference

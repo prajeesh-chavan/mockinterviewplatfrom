@@ -6,11 +6,11 @@ const Home = () => {
     <>
       <div className="flex flex-col w-full h-screen items-center justify-center gap-8 sm:gap-12 mt-5">
         <div className="flex flex-col w-full max-w-[1200px] h-fit items-center justify-center gap-8 sm:gap-12 px-4">
-          <div className="w-full max-w-[1000px] text-center">
-            <p className="font-[Roboto_Condensed-Bold,Helvetica] font-bold text-[#0073e6] text-4xl sm:text-5xl lg:text-6xl xl:text-[77px]">
+          <div className="w-full max-w-[1200px] text-center">
+            <p className="font-[Roboto_Condensed-Bold,Helvetica] font-extrabold  bg-gradient-to-br from-blue-600 to-blue-400 bg-clip-text text-transparent shadow-lg text-4xl sm:text-5xl lg:text-6xl xl:text-[77px]">
               Boost Your Interview Skills
             </p>
-            <p className="font-[Roboto_Condensed-Bold,Helvetica] font-bold text-white text-4xl sm:text-5xl lg:text-6xl xl:text-[77px]">
+            <p className="font-[Roboto_Condensed-Bold,Helvetica] font-extrabold bg-gradient-to-br from-gray-100 to-gray-300 bg-clip-text text-transparent text-4xl sm:text-5xl lg:text-6xl xl:text-[77px]">
               with AI Feedback
             </p>
           </div>
@@ -22,7 +22,7 @@ const Home = () => {
           <div className="rounded-md shadow">
             <a
               className="w-full flex items-center justify-center px-6 py-3 text-base font-medium rounded-md text-white bg-[#0073e6] hover:bg-[#1e5da6] hover:text-white focus:ring ring-offset-2 ring-[#0073e6] focus:outline-none transition duration-150 ease-in-out sm:px-8 sm:py-4 sm:text-lg md:text-xl lg:text-2xl"
-              href="#"
+              href="#interview"
             >
               Get started
             </a>
